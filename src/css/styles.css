@@ -1,5 +1,10 @@
 * {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+:root {
+  --box-height: 20vh;
+  --box-width: 40vh;
 }

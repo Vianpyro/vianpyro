@@ -1,0 +1,30 @@
+#github_repos {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin:0 10%;
+}
+.github_repo {
+  border-radius:5px;
+  box-shadow:#666 0 0 10px;
+  display:flex;
+  flex-direction:column;
+  margin:2pc;
+  max-height:var(--box-height);
+  max-width:var(--box-width);
+  min-height:var(--box-height);
+  min-width:var(--box-width);
+  overflow: auto;
+  transition-delay:.05s;
+  transition-duration:.25s;
+}
+.github_repo:hover {
+  transform:scale(1.05);
+}
+.repo_detail {
+  margin:.5em 2em;
+}
+.repo_name {
+  color:#000;
+  font-weight:700;
+}
