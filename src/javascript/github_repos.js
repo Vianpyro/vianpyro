@@ -15,7 +15,7 @@ async function load_user_github_repos(username) {
         <span class="repo_name">${name.replace(/-/g, " ").replace(/   /g, " - ")} ${forked}</span>
       </a>
       <span class="repo_detail">${desc}</span>
-      <span class="repo_detail"><b style="color: ${colors[lang]};">■</b> ${lang}</span>
+      <span class="repo_detail"><b style="color: ${colors[lang]};">•</b> ${lang}</span>
     </div>
     `;
     if (homepage && name != username) { document.getElementById(`js-${name}`).href = homepage }
