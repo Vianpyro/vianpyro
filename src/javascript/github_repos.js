@@ -15,7 +15,7 @@ async function load_user_github_repos(username) {
         <span class="repo_name">${name.replace(/-/g, " ").replace(/   /g, " - ")} ${forked}</span>
       </a>
       <span class="repo_detail">${desc}</span>
-      <span class="repo_detail">${lang}</span>
+      <span class="repo_detail"><b style="color: ${colors[lang]};">■</b> ${lang}</span>
     </div>
     `;
     if (homepage && name != username) { document.getElementById(`js-${name}`).href = homepage }
@@ -33,3 +33,11 @@ async function load_user_github_repos(username) {
 window.addEventListener("DOMContentLoaded", () => {
   load_user_github_repos('Vianpyro');
 });
+
+const colors = {
+  "Batchfile": "#c1f12e",
+  "HTML": "#e44b23",
+  "Java": "#b07219",
+  "JavaScript": "#f1e05a",
+  "Python": "#3572a5"
+}
