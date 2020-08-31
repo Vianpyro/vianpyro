@@ -4,6 +4,14 @@
   justify-content:center;
   margin:0 10%;
 }
+#github_username {
+  color: #4983ff;
+}
+.github_username {
+  display: flex;
+  justify-content: center;
+  margin: 8pc auto;
+}
 .github_repo {
   border-radius:5px;
   box-shadow:#666 0 0 10px;
