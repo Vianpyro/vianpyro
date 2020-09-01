@@ -12,6 +12,7 @@ async function load_user_github_data(username) {
     const data = await response.json();
     const user_name = data.name != null ? data.name : username;
     document.getElementById('github_username').innerHTML = user_name
+    document.getElementById('github_user_url').href = `https://github.com/${username}`
     document.title = user_name
 
     // Load the colors
@@ -31,7 +32,9 @@ async function load_user_github_data(username) {
           <span class="repo_name">${name.replace(/-/g, " ").replace(/   /g, " - ")} ${forked}</span>
         </a>
         <span class="repo_detail">${desc}</span>
-        <span class="repo_detail">${lang}</span>
+        <a href="${colors[language].url}" target="_blank" >
+          <span class="repo_detail">${lang}</span>
+        </a>
       </div>
       `;
       if (homepage && name != username) { document.getElementById(`js-${name}`).href = homepage }
@@ -59,20 +62,3 @@ window.addEventListener("DOMContentLoaded", () => {
 async function secret_command_load_username(new_username) {
   load_user_github_data(new_username);
 }
-
-// async function load_colors() {
-//   const colors_res = await fetch('https://raw.githubusercontent.com/ozh/github-colors/master/colors.json');
-//   const colors = await colors_res.json();
-//   return colors
-//   console.log(my_colors['HTML'].color)
-// }
-
-// load_colors();
-
-// const colors = {
-//   "Batchfile": "#c1f12e",
-//   "HTML": "#e44b23",
-//   "Java": "#b07219",
-//   "JavaScript": "#f1e05a",
-//   "Python": "#3572a5"
-// }

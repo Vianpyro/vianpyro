@@ -26,6 +26,11 @@
   transition-delay:.05s;
   transition-duration:.25s;
 }
+.github_repo a,
+#github_user_url {
+  color: inherit;
+  text-decoration: none;
+}
 .github_repo:hover {
   transform:scale(1.05);
 }
