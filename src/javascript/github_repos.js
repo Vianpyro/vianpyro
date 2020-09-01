@@ -3,16 +3,18 @@ async function load_user_github_data(username) {
   // Clear the page
   document.getElementById('github_repos').innerHTML = ''
   
+  
   try {
     var response = await fetch(`https://api.github.com/users/${username}/repos`);
     const json = await response.json();
-    
-    // Fill the user name title
+        
+    // Fill the user name title and image
     response = await fetch(`https://api.github.com/user/${json[0].owner.id}`);
     const data = await response.json();
     const user_name = data.name != null ? data.name : username;
     document.getElementById('github_username').innerHTML = user_name
     document.getElementById('github_user_url').href = `https://github.com/${username}`
+    document.getElementById('github_user_profile_picture').src = `https://avatars3.githubusercontent.com/u/${json[0].owner.id}`
     document.title = user_name
 
     // Load the colors
@@ -39,7 +41,6 @@ async function load_user_github_data(username) {
       `;
       if (homepage && name != username) { document.getElementById(`js-${name}`).href = homepage }
     })
-  
     // Changing the favicon
     let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
@@ -51,7 +52,7 @@ async function load_user_github_data(username) {
     document.getElementById('github_repos').innerHTML = 'This user seems not to have any public repository (yet).'
     document.title = username
   }
-
+  
 }
 
 // Wait for the DOM to be loaded before loading the user's profile

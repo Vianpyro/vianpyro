@@ -10,7 +10,11 @@
 .github_username {
   display: flex;
   justify-content: center;
-  margin: 8pc auto;
+  margin: 3pc auto;
+}
+#github_user_profile_picture {
+  width: 80px;
+  border-radius: 100%;
 }
 .github_repo {
   border-radius:5px;
