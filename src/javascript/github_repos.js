@@ -2,7 +2,7 @@
 async function load_user_github_data(username) {
   // Clear the page
   document.getElementById('github_repos').innerHTML = ''
-
+  
   try {
     var response = await fetch(`https://api.github.com/users/${username}/repos`);
     const json = await response.json();
@@ -12,12 +12,17 @@ async function load_user_github_data(username) {
     const data = await response.json();
     const user_name = data.name != null ? data.name : username;
     document.getElementById('github_username').innerHTML = user_name
+    document.title = user_name
+
+    // Load the colors
+    response = await fetch('https://raw.githubusercontent.com/ozh/github-colors/master/colors.json');
+    const colors = await response.json();
 
     // Load the page
     json.forEach(element => {
       const { name, fork, description, language, html_url, homepage } = element;
       const forked = fork ? `<span>(<b>Forked</b>)</span>` : "";
-      const lang = language ? `<b style="color: ${colors[language]};">•</b> ${language}` : "";
+      const lang = language ? `<b style="color: ${colors[language].color};">•</b> ${language}` : "";
       const desc = description != null ? description : "";
   
       document.getElementById('github_repos').innerHTML += `
@@ -41,7 +46,7 @@ async function load_user_github_data(username) {
   } catch {
     document.getElementById('github_username').innerHTML = username
     document.getElementById('github_repos').innerHTML = 'This user seems not to have any public repository (yet).'
-    return
+    document.title = username
   }
 
 }
@@ -55,10 +60,19 @@ async function secret_command_load_username(new_username) {
   load_user_github_data(new_username);
 }
 
-const colors = {
-  "Batchfile": "#c1f12e",
-  "HTML": "#e44b23",
-  "Java": "#b07219",
-  "JavaScript": "#f1e05a",
-  "Python": "#3572a5"
-}
+// async function load_colors() {
+//   const colors_res = await fetch('https://raw.githubusercontent.com/ozh/github-colors/master/colors.json');
+//   const colors = await colors_res.json();
+//   return colors
+//   console.log(my_colors['HTML'].color)
+// }
+
+// load_colors();
+
+// const colors = {
+//   "Batchfile": "#c1f12e",
+//   "HTML": "#e44b23",
+//   "Java": "#b07219",
+//   "JavaScript": "#f1e05a",
+//   "Python": "#3572a5"
+// }
