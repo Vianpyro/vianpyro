@@ -30,9 +30,9 @@ async function load_user_github_data(username) {
       
       document.getElementById('github_repos').innerHTML += `
       <div class="github_repo">
-      <a href="${html_url}" target = "_blank" id="js-${name}" class="repo_detail">
+        <a href="${html_url}" target = "_blank" id="js-${name}" class="repo_detail">
           <span class="repo_name">${name.replace(/-/g, " ").replace(/   /g, " - ")} ${forked}</span>
-          </a>
+        </a>
         <span class="repo_detail">${desc}</span>
         <span class="repo_detail">${lang}</span>
         </div>
@@ -49,24 +49,18 @@ async function load_user_github_data(username) {
     document.getElementById('github_user_profile_picture').src = "./src/img/octocat.png";
     document.getElementById('github_username').innerHTML = username;
     document.getElementById('github_repos').innerHTML = 'This user seems not to have any public repository (yet).';
+    document.getElementById('github_repos').style.textAlign = 'center'
     document.title = username;
     console.log(err);
   }
   document.getElementById('github_user_profile_picture').alt = `${username}'s profile picture`;
   document.getElementById('github_username_url').href = `https://github.com/${username}`;
-  make_links_open_in_new_page();
 }
 
 // Wait for the DOM to be loaded before loading the user's profile
 window.addEventListener("DOMContentLoaded", () => {
   load_user_github_data('Vianpyro');
 });
-
-async function make_links_open_in_new_page() {
-  document.getElementsByTagName('a').forEach((link) => {
-    link.target = "_blank";
-  })
-}
 
 async function secret_command_load_username(new_username) {
   load_user_github_data(new_username);
