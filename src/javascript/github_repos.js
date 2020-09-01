@@ -8,14 +8,20 @@ async function load_user_github_data(username) {
     var response = await fetch(`https://api.github.com/users/${username}/repos`);
     const json = await response.json();
         
-    // Fill the user name title and image
+    // Load the title and image
     response = await fetch(`https://api.github.com/user/${json[0].owner.id}`);
-    const data = await response.json();
+    var data = await response.json();
     const user_name = data.name != null ? data.name : username;
     document.getElementById('github_username').innerHTML = user_name;
     document.getElementById('github_user_url').href = `https://github.com/${username}`;
     document.getElementById('github_user_profile_picture').src = `https://avatars3.githubusercontent.com/u/${json[0].owner.id}`;
     document.title = user_name;
+    
+    // Load the bio
+    response = await fetch(`https://api.github.com/users/${username}`);
+    data = await response.json();
+    const user_bio = data.bio != null ? data.bio : '';
+    document.getElementById('github_user_bio').innerHTML = `"${user_bio}"`;
     
     // Load the colors
     response = await fetch('https://raw.githubusercontent.com/ozh/github-colors/master/colors.json');
@@ -50,6 +56,7 @@ async function load_user_github_data(username) {
     document.getElementById('github_username').innerHTML = username;
     document.getElementById('github_repos').innerHTML = 'This user seems not to have any public repository (yet).';
     document.getElementById('github_repos').style.textAlign = 'center'
+    document.getElementById('github_user_bio').innerHTML = "";
     document.title = username;
     console.log(err);
   }

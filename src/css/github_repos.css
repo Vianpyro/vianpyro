@@ -7,10 +7,12 @@
 #github_username {
   color: #4983ff;
 }
-.github_username {
+.github_username,
+#github_user_bio {
   display: flex;
   justify-content: center;
-  margin: 3pc auto;
+  margin: 3pc 5%;
+  text-align: center;
 }
 #github_user_profile_picture {
   width: 80px;
