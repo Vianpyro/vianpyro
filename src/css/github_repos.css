@@ -3,6 +3,7 @@
   flex-wrap:wrap;
   justify-content:center;
   margin:0 10%;
+  text-align: center;
 }
 #github_username {
   color: #4983ff;

@@ -34,9 +34,7 @@ async function load_user_github_data(username) {
           <span class="repo_name">${name.replace(/-/g, " ").replace(/   /g, " - ")} ${forked}</span>
         </a>
         <span class="repo_detail">${desc}</span>
-        <a href="${colors[language].url}" target="_blank" >
-          <span class="repo_detail">${lang}</span>
-        </a>
+        <span class="repo_detail">${lang}</span>
       </div>
       `;
       if (homepage && name != username) { document.getElementById(`js-${name}`).href = homepage }
@@ -47,10 +45,11 @@ async function load_user_github_data(username) {
     link.rel = 'shortcut icon';
     link.href = `https://avatars3.githubusercontent.com/u/${json[0].owner.id}`;
     document.getElementsByTagName('head')[0].appendChild(link);
-  } catch {
+  } catch (err) {
     document.getElementById('github_username').innerHTML = username
     document.getElementById('github_repos').innerHTML = 'This user seems not to have any public repository (yet).'
     document.title = username
+    console.log(err)
   }
   
 }
