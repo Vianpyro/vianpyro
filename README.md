@@ -18,8 +18,7 @@ I'm a self-taught passionate games enjoyer
 
 <code><img height="40" title="Python" alt="python" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
 <code><img height="40" title="C" alt="c" src="https://raw.githubusercontent.com/github/explore/f3e22f0dca2be955676bc70d6214b95b13354ee8/topics/c/c.png"></code>
-<code><img height="40" title="Java" alt="java" src="https://raw.githubusercontent.com/github/explore/5b3600551e122a3277c2c5368af2ad5725ffa9a1/topics/java/java.png"></code>
-<code><img height="37" title="Javascript" alt="javascript" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="40" title="HTML" alt="HTML" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
 <code><img height="37" title="MCFunction" alt="mcfunction" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Command_Block_Texture_Reveal.png/revision/latest/scale-to-width-down/120?cb=20230614040632"></code>
 
 </br>
