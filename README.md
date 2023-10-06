@@ -1,27 +1,32 @@
-<h1>Hello I'm Vianney 👋</h1>
+<div align="center">
+  <h1>Hello I'm Vianney 👋</h1>
+  
+  </br></br>
+  
+  I'm a self-taught passionate games enjoyer
 
-</br></br>
+  </br></br>
+  
+  <img src="https://github-readme-stats.vercel.app/api?username=Vianpyro&hide=issues&show_icons=true&theme=github_dark_dimmed"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vianpyro&layout=compact&theme=github_dark_dimmed"/>
 
-I'm a self-taught passionate games enjoyer
+  </br></br>
+  <img height="100" title="Python" alt="python" src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg">
+  <img height="100" title="C" alt="c" src="https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg">
+  <img height="100" title="HTML" alt="HTML" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg">
+  <img height="100" title="MCFunction" alt="mcfunction" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Command_Block_Texture_Reveal.png/revision/latest/scale-to-width-down/100?cb=20230614040632">
+  
+  </br>
 
-<h4>About me:</h4>
+  <h4>More about me:</h4>
+  
+  Currently studying Software Engineering at **École de Technologie Supérieure**
+  
+  I love solving problems with code
+  
+  I'm interested in video game design
 
-* Currently studying Software Engineering at **École de Technologie Supérieure**
-
-* I love solving problems with code
-
-* I'm interested in video game design
-
-</br>
-
-<h4>Languages:</h4>
-
-<code><img height="40" title="Python" alt="python" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
-<code><img height="40" title="C" alt="c" src="https://raw.githubusercontent.com/github/explore/f3e22f0dca2be955676bc70d6214b95b13354ee8/topics/c/c.png"></code>
-<code><img height="40" title="HTML" alt="HTML" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
-<code><img height="37" title="MCFunction" alt="mcfunction" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Command_Block_Texture_Reveal.png/revision/latest/scale-to-width-down/120?cb=20230614040632"></code>
-
-</br>
-
-[![Profile by Anurag](https://github-readme-stats.vercel.app/api?username=Vianpyro&count_private=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Vianpyro&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+  </br></br>
+  
+  <img src="https://komarev.com/ghpvc/?username=Vianpyro&color=red"/>
+</div>
