@@ -6,7 +6,8 @@
   I'm a self-taught passionate games enjoyer
 
   </br></br>
-  
+
+  <!-- https://github.com/anuraghazra/github-readme-stats -->
   <img src="https://github-readme-stats.vercel.app/api?username=Vianpyro&hide=issues&show_icons=true&theme=github_dark_dimmed"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vianpyro&layout=compact&theme=github_dark_dimmed"/>
 
