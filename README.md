@@ -19,8 +19,8 @@
 <a><img height="50" title="Java" alt="Java" src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg"></a>
 <a><img height="50" title="HTML" alt="HTML" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"></a>
 <a><img height="50" title="CSS" alt="CSS" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg"></a>
-<a><img height="50" title="Git" alt="Git" src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg"></a>
 <a><img height="50" title="JavaScript" alt="JavaScript" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"></a>
+<a><img height="50" title="Git" alt="Git" src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg"></a>
 <a><img height="50" title="Node.js" alt="Node.js" src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg"></a>
 <a><img height="50" title="SQLite" alt="SQLite" src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original.svg"></a>
 <a><img height="50" title="MCFunction" alt="mcfunction" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Command_Block_Texture_Reveal.png/revision/latest/scale-to-width-down/100?cb=20230614040632"></a>
