@@ -2,7 +2,7 @@
 
 ## About me
 
-I'm a self-taught programmer.
+✏ 💽 I am a self-taught programmer.
 
 ✏ 🧩 I enjoy solving problems with code
 
