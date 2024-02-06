@@ -6,7 +6,7 @@
 
 ✏ 🧩 I enjoy solving problems with code
 
-✏ 🐋 I am currently learning Docker
+✏ 🐋 I am currently learning containerization
 
 ✏ 🖬 I currently study Software Engineering at **École de Technologie Supérieure**
 
@@ -27,9 +27,9 @@
 <a><img height="50" title="Node.js" alt="Node.js" src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg"></a>
 <a><img height="50" title="SQLite" alt="SQLite" src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original.svg"></a>
 <a><img height="50" title="MySQL" alt="MySQL" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg"></a>
-<a><img height="50" title="MCFunction" alt="mcfunction" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Command_Block_Texture_Reveal.png/revision/latest/scale-to-width-down/100?cb=20230614040632"></a>
 <a><img height="50" title="Bash" alt="Bash" src="https://github.com/devicons/devicon/blob/master/icons/bash/bash-original.svg"></a>
 <a><img height="50" title="Docker" alt="Docker" src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg"></a>
+<a><img height="50" title="MCFunction" alt="mcfunction" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Command_Block_Texture_Reveal.png/revision/latest/scale-to-width-down/100?cb=20230614040632"></a>
 
 ## Fancy GitHub stuff
 
