@@ -21,6 +21,7 @@
 <a><img height="50" title="CSS" alt="CSS" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg"></a>
 <a><img height="50" title="JavaScript" alt="JavaScript" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"></a>
 <a><img height="50" title="PHP" alt="PHP" src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg"></a>
+<a><img height="50" title="Postman" alt="Postman" src="https://github.com/devicons/devicon/blob/master/icons/postman/postman-original.svg"></a>
 <a><img height="50" title="Git" alt="Git" src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg"></a>
 <a><img height="50" title="GitHub" alt="GitHub" src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg"></a>
 <a><img height="50" title="GitHub Actions" alt="GitHub Actions" src="https://github.com/devicons/devicon/blob/master/icons/githubactions/githubactions-original.svg"></a>
