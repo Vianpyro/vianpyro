@@ -27,6 +27,7 @@
 <a><img height="50" title="GitHub Actions" alt="GitHub Actions" src="https://github.com/devicons/devicon/blob/master/icons/githubactions/githubactions-original.svg"></a>
 <a><img height="50" title="SQLite" alt="SQLite" src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original.svg"></a>
 <a><img height="50" title="MySQL" alt="MySQL" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg"></a>
+<a><img height="50" title="MariaDB" alt="MariaDB" src="https://github.com/devicons/devicon/blob/master/icons/mariadb/mariadb-original.svg"></a>
 <a><img height="50" title="AzureSQLDB" alt="AzureSQLDB" src="https://github.com/devicons/devicon/blob/master/icons/azuresqldatabase/azuresqldatabase-original.svg"></a>
 <a><img height="50" title="Oracle DB" alt="Oracle DB" src="https://github.com/devicons/devicon/blob/master/icons/oracle/oracle-original.svg"></a>
 <a><img height="50" title="Bash" alt="Bash" src="https://github.com/devicons/devicon/blob/master/icons/bash/bash-original.svg"></a>
