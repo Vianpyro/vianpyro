@@ -8,7 +8,7 @@
 
 ✏ 🐋 I am currently learning containerization
 
-✏ 🖬 I currently study Software Engineering at **École de Technologie Supérieure**
+✏ 🖬 I currently study Software Engineering at [**École de Technologie Supérieure**](https://www.etsmtl.ca/en/)
 
 ✏ 📪 Reach me at **[vianney.veremme@gmail.com](mailto:vianney.veremme+githubprofile@gmail.com)**
 
