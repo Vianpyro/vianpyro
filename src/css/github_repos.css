@@ -1,58 +1,58 @@
 #github-repos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10%;
 }
 
 #github-username {
-  color: #4983ff;
+    color: #4983ff;
 }
 
 .github-username,
 #github-user-bio {
-  display: flex;
-  justify-content: center;
-  margin: 3pc 5%;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 3pc 5%;
+    text-align: center;
 }
 
 #github-user-profile-picture {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
 }
 
 .github-repo {
-  border-radius: 5px;
-  box-shadow: #666 0 0 10px;
-  display: flex;
-  flex-direction: column;
-  margin: 2pc;
-  max-height: var(--box-height);
-  max-width: var(--box-width);
-  min-height: var(--box-height);
-  min-width: var(--box-width);
-  overflow: auto;
-  transition-delay: .05s;
-  transition-duration: .25s;
+    border-radius: 5px;
+    box-shadow: #666 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 2pc;
+    max-height: var(--box-height);
+    max-width: var(--box-width);
+    min-height: var(--box-height);
+    min-width: var(--box-width);
+    overflow: auto;
+    transition-delay: .05s;
+    transition-duration: .25s;
 }
 
 .github-repo a,
 #github-user-url {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .github-repo:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .repo-detail {
-  margin: .5em 2em;
+    margin: .5em 2em;
 }
 
 .repo-name {
-  color: #000;
-  font-weight: 700;
+    color: #000;
+    font-weight: 700;
 }
