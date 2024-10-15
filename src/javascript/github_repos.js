@@ -2,12 +2,12 @@
 async function load_user_github_data(username) {
   // Clear the page
   document.getElementById('github_repos').innerHTML = '';
-  
-  
+
+
   try {
     var response = await fetch(`https://api.github.com/users/${username}/repos`);
     const json = await response.json();
-        
+
     // Load the title and image
     response = await fetch(`https://api.github.com/user/${json[0].owner.id}`);
     var data = await response.json();
@@ -16,13 +16,13 @@ async function load_user_github_data(username) {
     document.getElementById('github_user_url').href = `https://github.com/${username}`;
     document.getElementById('github_user_profile_picture').src = `https://avatars3.githubusercontent.com/u/${json[0].owner.id}`;
     document.title = user_name;
-    
+
     // Load the bio
     response = await fetch(`https://api.github.com/users/${username}`);
     data = await response.json();
     const user_bio = data.bio != null ? data.bio : '';
     document.getElementById('github_user_bio').innerHTML = `"${user_bio}"`;
-    
+
     // Load the colors
     response = await fetch('https://raw.githubusercontent.com/ozh/github-colors/master/colors.json');
     const colors = await response.json();
@@ -33,7 +33,7 @@ async function load_user_github_data(username) {
       const forked = fork ? `<span>(<b>Forked</b>)</span>` : "";
       const lang = language ? `<b style="color: ${colors[language].color};">•</b> ${language}` : "";
       const desc = description != null ? description : "";
-      
+
       document.getElementById('github_repos').innerHTML += `
       <div class="github_repo">
         <a href="${html_url}" target = "_blank" id="js-${name}" class="repo_detail">
