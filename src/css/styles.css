@@ -1,11 +1,28 @@
 * {
+    color: var(--text-color-primary);
     font-family: sans-serif;
     padding: 0;
     margin: 0;
     text-decoration: none;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
 }
 
 :root {
     --box-height: 20vh;
     --box-width: 40vh;
+    --spacing: 2rem;
+
+    /* Theme settings */
+    --background-color-primary: #f0f0f0;
+    --background-color-secondary: #fff;
+    --text-color-primary: #000;
+    --text-color-secondary: #333;
+
+    @media screen and (prefers-color-scheme: dark) {
+        --background-color-primary: #333;
+        --background-color-secondary: #444;
+        --text-color-primary: #fff;
+        --text-color-secondary: #ccc;
+    }
 }
