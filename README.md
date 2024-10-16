@@ -15,7 +15,8 @@
 ## Tools I use
 
 <a><img height="50" title="Python" alt="python" src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg"></a>
-<a><img height="50" title="C" alt="c" src="https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg"></a>
+<a><img height="50" title="C" alt="C" src="https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg"></a>
+<a><img height="50" title="C++" alt="C++" src="https://github.com/devicons/devicon/blob/master/icons/cplusplus/cplusplus-original.svg"></a>
 <a><img height="50" title="Java" alt="Java" src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg"></a>
 <a><img height="50" title="HTML" alt="HTML" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"></a>
 <a><img height="50" title="CSS" alt="CSS" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg"></a>
