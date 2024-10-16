@@ -2,67 +2,100 @@ const portfolioUsername = "Vianpyro";
 
 const githubRepositories = document.getElementById('github-repos');
 const githubUsername = document.getElementById('github-username');
-const githubUserUrl = document.getElementById('github-user-url');
 const githubUserProfilePicture = document.getElementById('github-user-profile-picture');
 const githubUserBio = document.getElementById('github-user-bio');
 
-// Load user's GitHub repositories
-async function loadGithubUserData(username) {
-    // Clear the page
+async function fetchData(url) {
+    const response = await fetch(url);
+    return response.json();
+}
+
+function updateUserProfile(data, username) {
+    const userName = data.name || username;
+    githubUsername.innerText = userName;
+    githubUsername.href = `https://github.com/${username}`;
+    githubUserProfilePicture.src = `https://avatars3.githubusercontent.com/u/${data.id}`;
+    document.title = userName;
+}
+
+function updateUserBio(data) {
+    const userBio = data.bio || '';
+    githubUserBio.innerText = `"${userBio}"`;
+}
+
+async function fetchGithubColors() {
+    const colorsUrl = 'https://raw.githubusercontent.com/ozh/github-colors/master/colors.json';
+    return fetchData(colorsUrl);
+}
+
+function createRepoElement(repo, colors, username) {
+    const { name, fork, description, language, html_url, homepage } = repo;
+    const repoDiv = document.createElement('div');
+    repoDiv.className = 'github-repo';
+
+    const repoLink = document.createElement('a');
+    repoLink.href = html_url;
+    repoLink.target = '_blank';
+    repoLink.id = `js-${name}`;
+    repoLink.className = 'repo-detail';
+
+    const repoNameSpan = document.createElement('span');
+    repoNameSpan.className = 'repo-name';
+    repoNameSpan.innerHTML = `${name.replace(/-/g, " ").replace(/   /g, " - ")} ${fork ? '<span>(<b>Forked</b>)</span>' : ''}`;
+    repoLink.appendChild(repoNameSpan);
+
+    const repoDescSpan = document.createElement('span');
+    repoDescSpan.className = 'repo-detail';
+    repoDescSpan.innerText = description || '';
+
+    const repoLangSpan = document.createElement('span');
+    repoLangSpan.className = 'repo-detail';
+    if (language) {
+        repoLangSpan.innerHTML = `<b style="color: ${colors[language].color};">•</b> ${language}`;
+    }
+
+    repoDiv.appendChild(repoLink);
+    repoDiv.appendChild(repoDescSpan);
+    repoDiv.appendChild(repoLangSpan);
+
+    if (homepage && name !== username) {
+        repoLink.href = homepage;
+    }
+
+    return repoDiv;
+}
+
+function updateRepositories(repos, colors, username) {
     githubRepositories.innerHTML = '';
+    repos.forEach(repo => {
+        const repoElement = createRepoElement(repo, colors, username);
+        githubRepositories.appendChild(repoElement);
+    });
+}
 
+function updateFavicon(userId) {
+    let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = `https://avatars3.githubusercontent.com/u/${userId}`;
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+
+async function loadGithubUserData(username) {
     try {
-        var response = await fetch(`https://api.github.com/users/${username}/repos`);
-        const json = await response.json();
+        const repos = await fetchData(`https://api.github.com/users/${username}/repos`);
+        const userProfile = await fetchData(`https://api.github.com/user/${repos[0].owner.id}`);
+        const userBio = await fetchData(`https://api.github.com/users/${username}`);
+        const colors = await fetchGithubColors();
 
-        // Load the title and image
-        response = await fetch(`https://api.github.com/user/${json[0].owner.id}`);
-        var data = await response.json();
-        const userName = data.name != null ? data.name : username;
-        githubUsername.innerText = userName;
-        githubUsername.href = `https://github.com/${username}`;
-        githubUserProfilePicture.src = `https://avatars3.githubusercontent.com/u/${json[0].owner.id}`;
-        document.title = userName;
-
-        // Load the bio
-        response = await fetch(`https://api.github.com/users/${username}`);
-        data = await response.json();
-        const userBio = data.bio != null ? data.bio : '';
-        githubUserBio.innerText = `"${userBio}"`;
-
-        // Load the colors
-        response = await fetch('https://raw.githubusercontent.com/ozh/github-colors/master/colors.json');
-        const colors = await response.json();
-
-        // Load the page
-        json.forEach(element => {
-            const { name, fork, description, language, htmlUrl, homepage } = element;
-            const forked = fork ? `<span>(<b>Forked</b>)</span>` : "";
-            const lang = language ? `<b style="color: ${colors[language].color};">•</b> ${language}` : "";
-            const desc = description != null ? description : "";
-
-            githubRepositories.innerHTML += `
-      <div class="github-repo">
-        <a href="${htmlUrl}" target = "_blank" id="js-${name}" class="repo-detail">
-          <span class="repo-name">${name.replace(/-/g, " ").replace(/   /g, " - ")} ${forked}</span>
-        </a>
-        <span class="repo-detail">${desc}</span>
-        <span class="repo-detail">${lang}</span>
-        </div>
-        `;
-            if (homepage && name != username) { document.getElementById(`js-${name}`).href = homepage };
-        })
-        // Changing the favicon
-        let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-        link.type = 'image/x-icon';
-        link.rel = 'shortcut icon';
-        link.href = `https://avatars3.githubusercontent.com/u/${json[0].owner.id}`;
-        document.getElementsByTagName('head')[0].appendChild(link);
+        updateUserProfile(userProfile, username);
+        updateUserBio(userBio);
+        updateRepositories(repos, colors, username);
+        updateFavicon(repos[0].owner.id);
     } catch (err) {
         githubUserProfilePicture.src = "./src/img/octocat.png";
         githubUsername.innerText = username;
         githubRepositories.innerText = 'This user seems not to have any public repository (yet).';
-        githubRepositories.style.textAlign = 'center'
         githubUserBio.innerHTML = "";
         document.title = username;
         console.log(err);
@@ -71,7 +104,6 @@ async function loadGithubUserData(username) {
     githubUsername.href = `https://github.com/${username}`;
 }
 
-// Wait for the DOM to be loaded before loading the user's profile
 window.addEventListener("DOMContentLoaded", () => {
     loadGithubUserData(portfolioUsername);
 });
