@@ -24,6 +24,10 @@ header {
     margin-top: var(--spacing);
 }
 
+header>* {
+    text-align: center;
+}
+
 main {
     align-items: center;
     display: flex;
@@ -48,10 +52,16 @@ main {
 
 #github-user-profile-picture {
     border-radius: 50%;
-    width: 6svw;
+    width: 8svw;
 }
 
 .github-repo:hover {
     border-radius: 15px;
     transform: scale(1.05);
+}
+
+@media screen and (width<=850px) {
+    #github-user-profile-picture {
+        width: 30svw;
+    }
 }
