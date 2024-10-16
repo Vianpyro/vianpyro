@@ -27,8 +27,7 @@ header {
 main {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     gap: var(--spacing);
     width: 85%;
