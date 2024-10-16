@@ -83,7 +83,7 @@ function updateFavicon(userId) {
 
 async function loadGithubUserData(username) {
     try {
-        const repos = await fetchData(`https://api.github.com/users/${username}/repos`);
+        const repos = await fetchData(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
         const userProfile = await fetchData(`https://api.github.com/user/${repos[0].owner.id}`);
         const userBio = await fetchData(`https://api.github.com/users/${username}`);
         const colors = await fetchGithubColors();
