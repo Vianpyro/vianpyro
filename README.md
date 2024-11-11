@@ -26,6 +26,7 @@
 <a><img height="50" title="Git" alt="Git" src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg"></a>
 <a><img height="50" title="GitHub" alt="GitHub" src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg"></a>
 <a><img height="50" title="GitHub Actions" alt="GitHub Actions" src="https://github.com/devicons/devicon/blob/master/icons/githubactions/githubactions-original.svg"></a>
+<a><img height="50" title="Flask API" alt="Flask API" src="https://github.com/devicons/devicon/blob/master/icons/flask/flask-original.svg"></a>
 <a><img height="50" title="SQLite" alt="SQLite" src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original.svg"></a>
 <a><img height="50" title="MySQL" alt="MySQL" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg"></a>
 <a><img height="50" title="MariaDB" alt="MariaDB" src="https://github.com/devicons/devicon/blob/master/icons/mariadb/mariadb-original.svg"></a>
