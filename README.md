@@ -6,7 +6,7 @@
 
 ✏ 🧩 I enjoy solving problems with code
 
-✏ 🐋 I am currently learning containerization
+✏ 🐋 I am currently exploring containerization
 
 ✏ 🖬 I currently study Software Engineering at [**École de Technologie Supérieure**](https://www.etsmtl.ca/en/)
 
