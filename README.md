@@ -28,6 +28,8 @@
 
 ### Frameworks and Libraries
 <a><img height="50" title="Flask API" alt="Flask API" src="https://github.com/devicons/devicon/blob/master/icons/flask/flask-original.svg"></a>
+<a><img height="50" title="Vue.js" alt="Vue.js" src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg"></a>
+<a><img height="50" title="Nuxt.js" alt="Nuxt.js" src="https://github.com/devicons/devicon/blob/master/icons/nuxtjs/nuxtjs-original.svg"></a>
 
 ### Utilities
 <a><img height="50" title="Postman" alt="Postman" src="https://github.com/devicons/devicon/blob/master/icons/postman/postman-original.svg"></a>
