@@ -32,6 +32,7 @@
 <a><img height="50" title="Flask API" alt="Flask API" src="https://github.com/devicons/devicon/blob/master/icons/flask/flask-original.svg"></a>
 <a><img height="50" title="Vue.js" alt="Vue.js" src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg"></a>
 <a><img height="50" title="Nuxt.js" alt="Nuxt.js" src="https://github.com/devicons/devicon/blob/master/icons/nuxtjs/nuxtjs-original.svg"></a>
+<a><img height="50" title="Astro" alt="Astro" src="https://github.com/devicons/devicon/blob/master/icons/astro/astro-original.svg"></a>
 
 ### Utilities
 
