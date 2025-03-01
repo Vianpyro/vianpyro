@@ -68,5 +68,6 @@
 
 ![Stats GitHub](https://github-readme-stats.vercel.app/api?username=Vianpyro&hide=issues&show_icons=true&theme=github_dark_dimmed)
 ![Most used languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Vianpyro&layout=compact&theme=github_dark_dimmed)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=vianpyro&theme=github_dark_dimmed)
 
 ![Ego boost](https://komarev.com/ghpvc/?username=Vianpyro&color=red)
