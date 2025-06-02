@@ -32,7 +32,8 @@
 ### Frameworks and Libraries
 
 <p align="left">
-    <img height="50" title="Flask API" alt="Flask API" src="https://github.com/devicons/devicon/blob/master/icons/flask/flask-original.svg">
+    <img height="50" title="FastAPI" alt="FastAPI" src="https://github.com/devicons/devicon/blob/master/icons/fastapi/fastapi-original.svg">
+    <img height="50" title="Flask" alt="Flask" src="https://github.com/devicons/devicon/blob/master/icons/flask/flask-original.svg">
     <img height="50" title="Vue.js" alt="Vue.js" src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg">
     <img height="50" title="Nuxt.js" alt="Nuxt.js" src="https://github.com/devicons/devicon/blob/master/icons/nuxtjs/nuxtjs-original.svg">
     <img height="50" title="Astro" alt="Astro" src="https://github.com/devicons/devicon/blob/master/icons/astro/astro-original.svg">
@@ -50,8 +51,9 @@
 ### Databases
 
 <p align="left">
-    <img height="50" title="SQLite" alt="SQLite" src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original.svg">
+    <img height="50" title="PostgreSQL" alt="PostgreSQL" src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg">
     <img height="50" title="MariaDB" alt="MariaDB" src="https://github.com/devicons/devicon/blob/master/icons/mariadb/mariadb-original.svg">
+    <img height="50" title="SQLite" alt="SQLite" src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original.svg">
     <img height="50" title="AzureSQLDB" alt="AzureSQLDB" src="https://github.com/devicons/devicon/blob/master/icons/azuresqldatabase/azuresqldatabase-original.svg">
     <img height="50" title="Oracle DB" alt="Oracle DB" src="https://github.com/devicons/devicon/blob/master/icons/oracle/oracle-original.svg">
 </p>
