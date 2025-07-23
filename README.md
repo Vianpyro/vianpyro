@@ -22,9 +22,11 @@
     <img height="50" title="C++" alt="C++" src="https://github.com/devicons/devicon/blob/master/icons/cplusplus/cplusplus-original.svg">
     <img height="50" title="Java" alt="Java" src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg">
     <img height="50" title="MySQL" alt="MySQL" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg">
+    <img height="50" title="Rust" alt="Rust" src="https://github.com/devicons/devicon/blob/master/icons/rust/rust-original.svg">
     <img height="50" title="HTML" alt="HTML" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg">
     <img height="50" title="CSS" alt="CSS" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg">
     <img height="50" title="JavaScript" alt="JavaScript" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg">
+    <img height="50" title="JavaScript" alt="JavaScript" src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg">
     <img height="50" title="PHP" alt="PHP" src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg">
     <img height="50" title="MCFunction" alt="mcfunction" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Command_Block_Texture_Reveal.png/revision/latest/scale-to-width-down/100?cb=20230614040632">
 </p>
