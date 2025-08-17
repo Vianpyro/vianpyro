@@ -10,7 +10,7 @@
 
 ✏ 🖬 I currently study Software Engineering at [**École de Technologie Supérieure**](https://www.etsmtl.ca/en/)
 
-✏ 📪 Reach me at **[vianney.veremme@gmail.com](mailto:vianney.veremme+githubprofile@gmail.com)**
+✏ 📪 Reach me at **[10519369+Vianpyro@users.noreply.github.com](mailto:10519369+Vianpyro@users.noreply.github.com)**
 
 ## Tools I Use
 
