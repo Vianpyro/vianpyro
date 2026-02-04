@@ -2,15 +2,13 @@
 
 ## About me
 
-✏ 💽 I am a self-taught programmer.
+✏ 💽 I am a self-learning programmer.
 
-✏ 🧩 I enjoy solving problems with code
+✏ 🧩 I enjoy solving problems with code.
 
-✏ 🔐 I am currently learning cybersecurity
+✏ 🔐 I am currently interested in cybersecurity.
 
-✏ 🖬 I currently study Software Engineering at [**École de Technologie Supérieure**](https://www.etsmtl.ca/en/)
-
-✏ 📪 Reach me at **[10519369+Vianpyro@users.noreply.github.com](mailto:10519369+Vianpyro@users.noreply.github.com)**
+✏ 🖬 I study Software Engineering at [**École de Technologie Supérieure**](https://www.etsmtl.ca/)
 
 ## Tools I Use
 
@@ -18,17 +16,11 @@
 
 <p align="left">
     <img height="50" title="C" alt="C" src="https://github.com/devicons/devicon/blob/master/icons/c/c-original.svg">
-    <img height="50" title="C++" alt="C++" src="https://github.com/devicons/devicon/blob/master/icons/cplusplus/cplusplus-original.svg">
-    <img height="50" title="CSS" alt="CSS" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg">
-    <img height="50" title="HTML" alt="HTML" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg">
     <img height="50" title="Java" alt="Java" src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg">
-    <img height="50" title="JavaScript" alt="JavaScript" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg">
     <img height="50" title="MCFunction" alt="mcfunction" src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5b/Command_Block_Texture_Reveal.png/revision/latest/scale-to-width-down/100?cb=20230614040632">
     <img height="50" title="MySQL" alt="MySQL" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg">
-    <img height="50" title="PHP" alt="PHP" src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg">
     <img height="50" title="Rust" alt="Rust" src="https://github.com/devicons/devicon/blob/master/icons/rust/rust-original.svg">
     <img height="50" title="Python" alt="python" src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg">
-    <img height="50" title="TypeScript" alt="TypeScript" src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg">
 </p>
 
 ### Frameworks and Libraries
@@ -55,9 +47,7 @@
 ### Databases
 
 <p align="left">
-    <img height="50" title="AzureSQLDB" alt="AzureSQLDB" src="https://github.com/devicons/devicon/blob/master/icons/azuresqldatabase/azuresqldatabase-original.svg">
     <img height="50" title="MariaDB" alt="MariaDB" src="https://github.com/devicons/devicon/blob/master/icons/mariadb/mariadb-original.svg">
-    <img height="50" title="Oracle DB" alt="Oracle DB" src="https://github.com/devicons/devicon/blob/master/icons/oracle/oracle-original.svg">
     <img height="50" title="PostgreSQL" alt="PostgreSQL" src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg">
     <img height="50" title="SQLite" alt="SQLite" src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original.svg">
 </p>
