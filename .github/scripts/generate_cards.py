@@ -43,6 +43,7 @@ query($login: String!) {
   user(login: $login) {
     contributionsCollection {
       totalCommitContributions
+      totalPullRequestContributions
       contributionCalendar {
         totalContributions
         weeks {
@@ -123,6 +124,7 @@ def fetch_stats() -> dict:
         "repos": len(repos),
         "stars": sum(r["stargazerCount"] for r in repos),
         "commits": col["totalCommitContributions"],
+        "prs": col["totalPullRequestContributions"],
         "contributions": cal["totalContributions"],
         "streak": _compute_streak(cal["weeks"]),
         "languages": _top_languages(repos),
