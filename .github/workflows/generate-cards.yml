@@ -32,6 +32,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Vianpyro/vianpyro.git
           git add assets/cards/
           git diff --cached --quiet || git commit -m "chore: update profile cards [skip ci]"
           git push
