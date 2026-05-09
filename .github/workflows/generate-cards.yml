@@ -1,0 +1,37 @@
+name: Generate Profile Cards
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: pip install requests --quiet
+
+      - name: Generate cards
+        env:
+          # PAT required: scopes read:org + public_repo
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_USERNAME: Vianpyro
+        run: python .github/scripts/generate_cards.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards/
+          git diff --cached --quiet || git commit -m "chore: update profile cards [skip ci]"
+          git push
