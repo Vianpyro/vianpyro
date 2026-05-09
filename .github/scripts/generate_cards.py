@@ -179,9 +179,10 @@ def _stat_block(x: int, value: int, label: str, color: str) -> str:
 
 
 def _stacked_bar(languages: list, y: int) -> str:
+    top_total = sum(l["pct"] for l in languages) or 1.0
     segs, x = [], 25.0
     for lang in languages:
-        w = lang["pct"] / 100.0 * 445
+        w = lang["pct"] / top_total * 445
         segs.append(
             f'  <rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="8"'
             f' fill="{lang["color"]}"/>'
