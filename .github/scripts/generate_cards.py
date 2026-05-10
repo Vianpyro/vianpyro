@@ -193,14 +193,14 @@ def _stacked_bar(languages: list, y: int) -> str:
 
 def _lang_row(i: int, lang: dict, max_pct: float) -> str:
     y = 68 + i * 26
-    bar_w = int(lang["pct"] / max_pct * 240)
+    bar_w = int(lang["pct"] / max_pct * 280)
     return (
         f'  <circle cx="25" cy="{y + 6}" r="5" fill="{lang["color"]}"/>'
         f'<text x="38" y="{y + 11}" font-family="sans-serif" font-size="12"'
         f' fill="#e6edf3">{lang["name"]}</text>'
         f'<rect x="165" y="{y}" width="{bar_w}" height="13" rx="3"'
         f' fill="{lang["color"]}" opacity="0.75"/>'
-        f'<text x="415" y="{y + 11}" font-family="monospace" font-size="11"'
+        f'<text x="455" y="{y + 11}" font-family="monospace" font-size="11"'
         f' fill="#7d8590" text-anchor="end">{lang["pct"]}%</text>'
     )
 
