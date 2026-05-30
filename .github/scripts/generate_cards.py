@@ -84,12 +84,30 @@ def _gql(query: str, variables: dict | None = None) -> dict:
         raise RuntimeError(payload["errors"])
     return payload["data"]
 
+def _fetch_owned_org_logins() -> set[str]:
+    """Return logins of organizations where the authenticated user has ADMIN role."""
+    logins, cursor = set(), None
+    while True:
+       page = _gql(_Q_ORGS, {"login": USERNAME, "after": cursor})["user"]["organizations"]
+        for node in page["nodes"]:
+            if node["viewerCurrentUserMembership"]["role"] == "ADMIN":
+                logins.add(node["login"])
+        if not page["pageInfo"]["hasNextPage"]:
+            break
+        cursor = page["pageInfo"]["endCursor"]
+    return logins
 
 def _fetch_repos() -> list:
+    owned_orgs = _fetch_owned_org_logins()
+    # Include personal repos (owner == self) and repos from orgs where i'm admin.
+    allowed_owners = {USERNAME} | owned_orgs
     repos, cursor = [], None
     while True:
         page = _gql(_Q_REPOS, {"login": USERNAME, "after": cursor})["user"]["repositories"]
-        repos.extend(page["nodes"])
+        repos.extend(
+            node for node in page["nodes"]
+            if node["owner"]["login"] in allowed_owners
+        )
         if not page["pageInfo"]["hasNextPage"]:
             break
         cursor = page["pageInfo"]["endCursor"]
