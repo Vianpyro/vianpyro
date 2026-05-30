@@ -17,6 +17,20 @@ _HEADERS = {
 }
 _GQL_URL = "https://api.github.com/graphql"
 
+_Q_ORGS = """
+query($login: String!, $after: String) {
+  user(login: $login) {
+    organizations(first: 100, after: $after) {
+      pageInfo { hasNextPage endCursor }
+      nodes {
+        login
+        viewerCurrentUserMembership { role }
+      }
+    }
+  }
+}
+"""
+
 _Q_REPOS = """
 query($login: String!, $after: String) {
   user(login: $login) {
@@ -29,6 +43,7 @@ query($login: String!, $after: String) {
       pageInfo { hasNextPage endCursor }
       nodes {
         stargazerCount
+        owner { login }
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
           edges { size node { name color } }
         }
