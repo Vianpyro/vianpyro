@@ -24,7 +24,7 @@ query($login: String!, $after: String) {
       pageInfo { hasNextPage endCursor }
       nodes {
         login
-        viewerCurrentUserMembership { role }
+        viewerCanAdminister
       }
     }
   }
@@ -86,12 +86,12 @@ def _gql(query: str, variables: dict | None = None) -> dict:
 
 
 def _fetch_owned_org_logins() -> set[str]:
-    """Return logins of organizations where the authenticated user has ADMIN role."""
+    """Return logins of organizations where the authenticated user can administer."""
     logins, cursor = set(), None
     while True:
         page = _gql(_Q_ORGS, {"login": USERNAME, "after": cursor})["user"]["organizations"]
         for node in page["nodes"]:
-            if node["viewerCurrentUserMembership"]["role"] == "ADMIN":
+            if node["viewerCanAdminister"]:
                 logins.add(node["login"])
         if not page["pageInfo"]["hasNextPage"]:
             break
