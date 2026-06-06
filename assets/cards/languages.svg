@@ -28,5 +28,5 @@
   <circle cx="25" cy="204" r="5" fill="#e38c00"/><text x="38" y="209" font-family="sans-serif" font-size="12" fill="#e6edf3">SQL</text><rect x="165" y="198" width="143" height="13" rx="3" fill="#e38c00" opacity="0.75"/><text x="468" y="209" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">7.5%</text>
   <circle cx="25" cy="230" r="5" fill="#555555"/><text x="38" y="235" font-family="sans-serif" font-size="12" fill="#e6edf3">C</text><rect x="165" y="224" width="116" height="13" rx="3" fill="#555555" opacity="0.75"/><text x="468" y="235" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">6.1%</text>
   <circle cx="25" cy="256" r="5" fill="#b07219"/><text x="38" y="261" font-family="sans-serif" font-size="12" fill="#e6edf3">Java</text><rect x="165" y="250" width="113" height="13" rx="3" fill="#b07219" opacity="0.75"/><text x="468" y="261" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">5.9%</text>
-  <text x="25" y="288" font-family="sans-serif" font-size="10" fill="rgba(125,133,144,0.35)">Updated 2026-06-05</text>
+  <text x="25" y="288" font-family="sans-serif" font-size="10" fill="rgba(125,133,144,0.35)">Updated 2026-06-06</text>
 </svg>
