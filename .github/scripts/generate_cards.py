@@ -11,6 +11,10 @@ USERNAME: str = os.environ.get("GITHUB_USERNAME", "Vianpyro")
 _TOKEN: str = os.environ["GH_TOKEN"]
 OUTPUT_DIR: Path = Path(os.environ.get("OUTPUT_DIR", "assets/cards"))
 
+IGNORED_REPOS: set[str] = {
+    "VianAtETS/GTI611-CloudSim",
+}
+
 _HEADERS = {
     "Authorization": f"Bearer {_TOKEN}",
     "X-GitHub-Api-Version": "2022-11-28",
@@ -42,6 +46,7 @@ query($login: String!, $after: String) {
     ) {
       pageInfo { hasNextPage endCursor }
       nodes {
+        nameWithOwner
         stargazerCount
         owner { login }
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
@@ -52,7 +57,7 @@ query($login: String!, $after: String) {
   }
 }
 """
-
+_fetch_repos()
 _Q_CONTRIB = """
 query($login: String!) {
   user(login: $login) {
@@ -101,18 +106,33 @@ def _fetch_owned_org_logins() -> set[str]:
 
 def _fetch_repos() -> list:
     owned_orgs = _fetch_owned_org_logins()
+
     # Include personal repos (owner == self) and repos from orgs where we're admin.
     allowed_owners = {USERNAME} | owned_orgs
-    repos, cursor = [], None
+
+    repos = []
+    cursor = None
+
     while True:
-        page = _gql(_Q_REPOS, {"login": USERNAME, "after": cursor})["user"]["repositories"]
+        page = _gql(
+            _Q_REPOS,
+            {"login": USERNAME, "after": cursor},
+        )["user"]["repositories"]
+
         repos.extend(
-            node for node in page["nodes"]
-            if node["owner"]["login"] in allowed_owners
+            node
+            for node in page["nodes"]
+            if (
+                node["owner"]["login"] in allowed_owners
+                and node["nameWithOwner"] not in IGNORED_REPOS
+            )
         )
+
         if not page["pageInfo"]["hasNextPage"]:
             break
+
         cursor = page["pageInfo"]["endCursor"]
+
     return repos
 
 
