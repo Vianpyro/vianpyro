@@ -57,7 +57,7 @@ query($login: String!, $after: String) {
   }
 }
 """
-_fetch_repos()
+
 _Q_CONTRIB = """
 query($login: String!) {
   user(login: $login) {
