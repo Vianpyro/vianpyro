@@ -12,7 +12,7 @@ _TOKEN: str = os.environ["GH_TOKEN"]
 OUTPUT_DIR: Path = Path(os.environ.get("OUTPUT_DIR", "assets/cards"))
 
 IGNORED_REPOS: set[str] = {
-    "VianAtETS/GTI611-CloudSim",
+    # "VianAtETS/GTI611-CloudSim",
 }
 
 _HEADERS = {
