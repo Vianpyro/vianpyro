@@ -12,21 +12,21 @@
   <rect width="495" height="3" fill="url(#ac)" clip-path="url(#cl)"/>
   <text x="25" y="35" font-family="sans-serif" font-size="15" font-weight="600" fill="#e6edf3">Top Languages</text>
   <line x1="25" y1="45" x2="470" y2="45" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <rect x="25.0" y="52" width="104.4" height="8" fill="#dea584"/>
-  <rect x="129.4" y="52" width="71.7" height="8" fill="#3572A5"/>
-  <rect x="201.1" y="52" width="64.2" height="8" fill="#f1e05a"/>
-  <rect x="265.3" y="52" width="52.5" height="8" fill="#E22837"/>
-  <rect x="317.8" y="52" width="50.7" height="8" fill="#3178c6"/>
-  <rect x="368.5" y="52" width="37.3" height="8" fill="#e38c00"/>
-  <rect x="405.8" y="52" width="33.2" height="8" fill="#b07219"/>
-  <rect x="439.1" y="52" width="30.9" height="8" fill="#555555"/>
-  <circle cx="25" cy="74" r="5" fill="#dea584"/><text x="38" y="79" font-family="sans-serif" font-size="12" fill="#e6edf3">Rust</text><rect x="165" y="68" width="255" height="13" rx="3" fill="#dea584" opacity="0.75"/><text x="468" y="79" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">17.9%</text>
-  <circle cx="25" cy="100" r="5" fill="#3572A5"/><text x="38" y="105" font-family="sans-serif" font-size="12" fill="#e6edf3">Python</text><rect x="165" y="94" width="175" height="13" rx="3" fill="#3572A5" opacity="0.75"/><text x="468" y="105" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">12.3%</text>
-  <circle cx="25" cy="126" r="5" fill="#f1e05a"/><text x="38" y="131" font-family="sans-serif" font-size="12" fill="#e6edf3">JavaScript</text><rect x="165" y="120" width="156" height="13" rx="3" fill="#f1e05a" opacity="0.75"/><text x="468" y="131" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">11.0%</text>
-  <circle cx="25" cy="152" r="5" fill="#E22837"/><text x="38" y="157" font-family="sans-serif" font-size="12" fill="#e6edf3">mcfunction</text><rect x="165" y="146" width="128" height="13" rx="3" fill="#E22837" opacity="0.75"/><text x="468" y="157" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">9.0%</text>
-  <circle cx="25" cy="178" r="5" fill="#3178c6"/><text x="38" y="183" font-family="sans-serif" font-size="12" fill="#e6edf3">TypeScript</text><rect x="165" y="172" width="123" height="13" rx="3" fill="#3178c6" opacity="0.75"/><text x="468" y="183" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">8.7%</text>
-  <circle cx="25" cy="204" r="5" fill="#e38c00"/><text x="38" y="209" font-family="sans-serif" font-size="12" fill="#e6edf3">SQL</text><rect x="165" y="198" width="91" height="13" rx="3" fill="#e38c00" opacity="0.75"/><text x="468" y="209" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">6.4%</text>
-  <circle cx="25" cy="230" r="5" fill="#b07219"/><text x="38" y="235" font-family="sans-serif" font-size="12" fill="#e6edf3">Java</text><rect x="165" y="224" width="81" height="13" rx="3" fill="#b07219" opacity="0.75"/><text x="468" y="235" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">5.7%</text>
-  <circle cx="25" cy="256" r="5" fill="#555555"/><text x="38" y="261" font-family="sans-serif" font-size="12" fill="#e6edf3">C</text><rect x="165" y="250" width="75" height="13" rx="3" fill="#555555" opacity="0.75"/><text x="468" y="261" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">5.3%</text>
-  <text x="25" y="288" font-family="sans-serif" font-size="10" fill="rgba(125,133,144,0.35)">Updated 2026-07-04</text>
+  <rect x="25.0" y="52" width="108.3" height="8" fill="#dea584"/>
+  <rect x="133.3" y="52" width="70.6" height="8" fill="#3572A5"/>
+  <rect x="203.9" y="52" width="63.6" height="8" fill="#f1e05a"/>
+  <rect x="267.5" y="52" width="51.8" height="8" fill="#E22837"/>
+  <rect x="319.3" y="52" width="50.0" height="8" fill="#3178c6"/>
+  <rect x="369.3" y="52" width="37.1" height="8" fill="#e38c00"/>
+  <rect x="406.4" y="52" width="33.0" height="8" fill="#b07219"/>
+  <rect x="439.4" y="52" width="30.6" height="8" fill="#555555"/>
+  <circle cx="25" cy="74" r="5" fill="#dea584"/><text x="38" y="79" font-family="sans-serif" font-size="12" fill="#e6edf3">Rust</text><rect x="165" y="68" width="255" height="13" rx="3" fill="#dea584" opacity="0.75"/><text x="468" y="79" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">18.4%</text>
+  <circle cx="25" cy="100" r="5" fill="#3572A5"/><text x="38" y="105" font-family="sans-serif" font-size="12" fill="#e6edf3">Python</text><rect x="165" y="94" width="166" height="13" rx="3" fill="#3572A5" opacity="0.75"/><text x="468" y="105" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">12.0%</text>
+  <circle cx="25" cy="126" r="5" fill="#f1e05a"/><text x="38" y="131" font-family="sans-serif" font-size="12" fill="#e6edf3">JavaScript</text><rect x="165" y="120" width="149" height="13" rx="3" fill="#f1e05a" opacity="0.75"/><text x="468" y="131" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">10.8%</text>
+  <circle cx="25" cy="152" r="5" fill="#E22837"/><text x="38" y="157" font-family="sans-serif" font-size="12" fill="#e6edf3">mcfunction</text><rect x="165" y="146" width="121" height="13" rx="3" fill="#E22837" opacity="0.75"/><text x="468" y="157" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">8.8%</text>
+  <circle cx="25" cy="178" r="5" fill="#3178c6"/><text x="38" y="183" font-family="sans-serif" font-size="12" fill="#e6edf3">TypeScript</text><rect x="165" y="172" width="117" height="13" rx="3" fill="#3178c6" opacity="0.75"/><text x="468" y="183" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">8.5%</text>
+  <circle cx="25" cy="204" r="5" fill="#e38c00"/><text x="38" y="209" font-family="sans-serif" font-size="12" fill="#e6edf3">SQL</text><rect x="165" y="198" width="87" height="13" rx="3" fill="#e38c00" opacity="0.75"/><text x="468" y="209" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">6.3%</text>
+  <circle cx="25" cy="230" r="5" fill="#b07219"/><text x="38" y="235" font-family="sans-serif" font-size="12" fill="#e6edf3">Java</text><rect x="165" y="224" width="77" height="13" rx="3" fill="#b07219" opacity="0.75"/><text x="468" y="235" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">5.6%</text>
+  <circle cx="25" cy="256" r="5" fill="#555555"/><text x="38" y="261" font-family="sans-serif" font-size="12" fill="#e6edf3">C</text><rect x="165" y="250" width="72" height="13" rx="3" fill="#555555" opacity="0.75"/><text x="468" y="261" font-family="monospace" font-size="11" fill="#7d8590" text-anchor="end">5.2%</text>
+  <text x="25" y="288" font-family="sans-serif" font-size="10" fill="rgba(125,133,144,0.35)">Updated 2026-07-05</text>
 </svg>
