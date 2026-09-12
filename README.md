@@ -35,8 +35,6 @@ interested in systems programming and cybersecurity.
     src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg">
   <img height="40" title="FastAPI" alt="FastAPI"
     src="https://github.com/devicons/devicon/blob/master/icons/fastapi/fastapi-original.svg">
-  <img height="40" title="Flask" alt="Flask"
-    src="https://github.com/devicons/devicon/blob/master/icons/flask/flask-original.svg">
   <img height="40" title="GitHub Actions" alt="GitHub Actions"
     src="https://github.com/devicons/devicon/blob/master/icons/githubactions/githubactions-original.svg">
   <img height="40" title="Hoppscotch" alt="Hoppscotch"
@@ -55,10 +53,6 @@ interested in systems programming and cybersecurity.
     src="https://github.com/devicons/devicon/blob/master/icons/podman/podman-original.svg">
   <img height="40" title="PostgreSQL" alt="PostgreSQL"
     src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg">
-  <img height="40" title="Pug" alt="Pug"
-    src="https://github.com/devicons/devicon/blob/master/icons/pug/pug-original.svg">
-  <img height="40" title="Selenium" alt="Selenium"
-    src="https://github.com/devicons/devicon/blob/master/icons/selenium/selenium-original.svg">
   <img height="40" title="SQLite" alt="SQLite"
     src="https://github.com/devicons/devicon/blob/master/icons/sqlite/sqlite-original.svg">
   <img height="40" title="Svelte" alt="Svelte"
